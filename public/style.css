@@ -1,0 +1,16 @@
+input[name="number"] {
+  width: 54px;
+}
+
+input[name="length"] {
+  width: 36px;
+}
+
+select{
+  margin:auto 5;
+}
+
+body {
+  margin: 1 auto;
+  text-align: center;
+}

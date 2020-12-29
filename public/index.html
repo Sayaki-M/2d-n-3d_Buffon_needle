@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>ビュフォン2D</title>
+  </head>
+  <body>
+    <div id="canvas"></div>
+    <p>
+    <form method="post" name="props" onsubmit="init(); return false;">
+        針の長さ: <input type="number" name="length" value="30" min="1" max="84">
+        針の本数: <input type="number" name="number" value="100" min="-1">
+        <select name="speed">
+          <option value="loose">アニメーション</option>
+          <option value="quick">結果のみ</option>
+        <input type="submit" value="Go!">
+    </form>
+    </p>
+    <p>
+      赤の針:<span id = "onneedle"></span>本
+      緑の針:<span id = "offneedle"></span>本
+      針全体:<span id = "allneedle"></span>本
+    </p>
+    <p>
+      グリッド1辺:<span id = "length"></span>
+      重なる確率:<span id = "rate"></span>
+    </p>
+    <a href = "./Buffon3D.html">三次元版</a>
+  </body>
+</html>
